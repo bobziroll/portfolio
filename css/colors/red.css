@@ -1,0 +1,33 @@
+/* red - #e74c3c */
+
+
+a:link,a:visited,.navbar-default .navbar-nav>li>a:hover, 
+.navbar-default .navbar-nav>li>a:focus,a:hover,a:active,.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:hover, 
+.navbar-default .navbar-nav>.active>a:focus{
+	color:#e74c3c;
+}
+
+.spacer,.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus,#grid .mix .overlay {
+
+background: #e74c3c;
+}
+
+#page-contact{
+	background: #e74c3c;
+	color:#fff;
+}
+
+#page-contact .spacer{
+	background: #fff;
+}
+
+#page-contact .section-title{
+	color:#fff;
+}
+
+.btn.btn-default:hover,
+.btn.btn-default:active{
+    color:#e74c3c;
+}
+

@@ -1,0 +1,622 @@
+/* ==========================================================================
+   Articulate v1.0
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    color:#757575;
+}
+
+img { 
+    max-width: 100%;
+}
+
+a:link,a:visited {
+    outline: 0;
+}
+
+a:hover,a:active {
+    text-decoration: none;
+}
+
+a img {
+    border: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+}
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+.navbar{
+    width:100%;
+}
+
+.navbar-default {
+    background: rgba(255, 255, 255, 0.85);
+    border: none;
+    color:#777;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    position:fixed;
+
+}
+
+.navbar-nav{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    float:none;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-nav>li>a:hover, 
+.navbar-default .navbar-nav>li>a:focus {
+background-color: transparent;
+}
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:hover, 
+.navbar-default .navbar-nav>.active>a:focus {
+    background: none;
+}
+/* ==========================================================================
+  Layout 
+   ========================================================================== */
+
+#page-welcome{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+#page-welcome header{
+    color:#fff;
+    padding-top:20%;
+
+}
+
+#page-welcome header h1{
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 1em;
+   text-transform: uppercase;
+}
+
+#page-welcome header p{
+    font-size: 2em;
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 0 8px;
+     letter-spacing: 0.1em;
+    line-height: 3em;
+    text-transform: uppercase;
+}
+
+
+#page-profile{
+    padding: 75px 0;
+    background:#fff;
+}
+
+#page-profile .profile{
+    border: 5px solid #333;
+    width:225px;
+    height:225px;
+    margin: 0 20px 20px 0;
+   
+}
+
+
+#page-skills{
+    padding: 75px 0;
+    background:#f7f7f7;
+    text-align: center;
+}
+
+#page-education{
+    padding: 75px 0;
+    background:#fff;
+}
+
+
+#page-experience{
+     padding: 75px 0;
+    background:#f7f7f7;
+}
+
+#page-portfolio{
+    padding: 75px 0;
+    background:#fff;
+
+}
+
+#page-contact{
+    padding: 75px 0;
+}
+
+#page-contact .contact-info p{
+    font-size:1.2em;
+}
+
+
+/* ==========================================================================
+   Portfolio   
+   ========================================================================== */
+
+#grid-controls-wrapper{
+    text-align: center;
+    float:none;
+    width:100%;
+
+}
+
+.center-pills { 
+    display: inline-block; 
+}
+#grid .mix{
+    width: 200px;
+    height: 150px;
+    vertical-align: top;
+    margin:20px 20px 20px 0 ;
+    color: #fff;
+    text-align: center;
+    display: inline-block; 
+
+}
+
+
+#grid .mix .thumbnail{
+    border:2px thin #F7F7F7;
+    padding:0;
+    border-radius:0;
+}
+
+
+#grid .mix .overlay{
+    width: 200px;
+    height: 150px;
+    position:absolute;
+    opacity:0;
+
+}
+
+#grid .mix .overlay:hover{
+     opacity:.8;
+}
+
+#grid .mix .overlay i{
+    font-size: 2em;
+    opacity: 1;
+    color: #fff;
+    padding-top: 30%;
+}
+
+ 
+ 
+.isotope-item {
+    z-index: 2;
+}
+ 
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+ 
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+ 
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+ 
+/**** disabling Isotope CSS3 transitions ****/
+ 
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+/* ==========================================================================
+   Vegas slider
+   ========================================================================== */
+
+.vegas-loading {
+    border-radius: 10px;
+    background: #000;
+    background: rgba(0,0,0,0.7);
+    background: url(../img/loading.gif) no-repeat center center;
+    height: 32px;
+    left: 20px;
+    position: fixed;
+    top: 20px;
+    width: 32px; 
+    z-index: 0;
+}
+
+.vegas-overlay {
+    background: transparent url(../img/overlays/16.png);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.vegas-background {
+    -ms-interpolation-mode: bicubic;
+    image-rendering: optimizeQuality;
+    max-width: none !important; /* counteracts global img modification by twitter bootstrap library */
+    z-index: -2;
+}
+
+.vegas-overlay,
+.vegas-background {
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.slider-controls{
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.slider-controls li{
+    list-style: none;
+}
+
+#page-welcome:hover .slider-controls{
+    opacity: 1;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.slider-controls li a{
+        position: absolute;
+        z-index: 10;
+        top: 40%;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+}
+.next{
+    background: url("../img/next.png");
+    margin-right: 70px;
+    right: 0;
+    opacity: 0.3;
+}
+.prev{
+    background: url("../img/prev.png");
+    margin-left: 70px;
+    left: 0;
+    opacity: 0.3;
+}
+.next:hover, 
+.prev:hover{opacity: 1;}
+
+/* ==========================================================================
+   Dividers
+   ========================================================================== */
+.section-header {
+    text-align: center;
+}
+
+.section-header p{
+    font-size: 1.5em;
+}
+.section-title {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #555555;
+    text-transform: uppercase;
+    padding:20px 0;
+}
+
+.spacer {
+    width: 100px;
+    height: 2px;
+    margin: auto;
+}
+
+.section-subtitle {
+    text-align: center;
+    padding:30px 0;
+}
+
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+.form-control{
+    box-shadow:none;
+    -webkit-box-shadow:none;
+    border: none;
+}
+
+.btn.btn-default{
+    margin: 40px auto 0;
+    background:transparent;
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    padding: 12px 26px 12px;
+    cursor: pointer;
+    border: 2px solid #4cddf3;
+    border-radius: 0;
+    letter-spacing: 2px;
+    pointer-events: auto;
+    border-color: #fff;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.btn.btn-default:hover,
+.btn.btn-default:active{
+    background:#fff;
+    border-color: #fff;
+    color:fff;
+}
+
+input,.input-lg,button{
+    border-radius:0;
+}
+
+.control-group.error input, .control-group.error select, .control-group.error textarea {
+border-color: #b94a48;
+-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.control-group.error .checkbox, .control-group.error .radio, .control-group.error input, .control-group.error select, .control-group.error textarea {
+color: #b94a48;
+}
+
+label.error{
+    color:#fff;
+    background:#b94a48;
+    border:solid thin #fff;
+    padding:3px 5px;
+}
+
+label.valid{
+    color:#fff;
+    background:#5CB85C;
+    border:solid thin #fff;
+    padding:3px 5px;
+
+}
+/* ==========================================================================
+   Charts   
+   ========================================================================== */
+.chart {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.percent {
+  display: inline-block;
+  line-height: 150px;
+  z-index: 2;
+}
+.percent:after {
+  content: '%';
+  margin-left: 0.1em;
+  font-size: .8em;
+}
+
+
+/* ==========================================================================
+   Social icons
+   ========================================================================== */
+
+.social-icons .btn{
+    margin-right: 15px;
+}
+.social-icons{
+    padding-top: 10px;
+    margin-bottom: 35px;
+}
+.social-icons .btn.btn-clear{
+    border: 1px solid #fff;
+}
+
+.btn-round{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    padding: 0;
+}
+.btn-round i{
+    font-size: 20px;
+    top: 15px;
+    position: relative;
+}
+.btn.btn-clear{
+    border: 1px solid #fff;
+    color: #fff;
+    background: none;
+    background-color: none;
+    font-weight: bold;
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;  
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+}
+.btn.btn-clear:hover, 
+.btn.btn-clear.selected{
+    background: #fff;
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+}
+
+.btn-twitter:hover{
+    color:#2BA9E0;
+}
+
+.btn-facebook:hover{
+    color:#204385;
+}
+
+.btn-dribbble:hover{
+    color:#D92C85;
+}
+
+.btn-instagram:hover{
+    color:#BAB1A8;
+}
+
+.btn-linkedin:hover{
+    color:#015786;
+}
+
+.btn-pinterest:hover{
+    color:#CA2128;
+}
+
+.btn-google:hover{
+    color:#D3492C;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.left { float: left; }
+.right { float: right; }
+.text-center {text-align: center;}
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+
+
+
+/* ==========================================================================
+   Responsive Settings
+   ========================================================================== */
+
+
+@media(max-width:992px) {
+
+  #page-profile .profile{
+    margin:0 auto 20px auto;
+  }
+
+
+}
+
+@media  (max-width: 479px) {
+    
+    #page-welcome header h1 {
+        font-size: 2em;
+    }
+
+    #page-welcome header p {
+        font-size: 1em;
+       line-height: 3em;
+    }
+       .section-title {
+        font-size: 1.5em;
+
+        }
+
+        .section-header p {
+        font-size: 1.2em;
+        }
+
+        #page-skills{
+             text-align: center;
+        }
+
+        #grid{
+            text-align: center;
+        }
+
+          #page-profile .profile{
+    margin:0 auto 20px auto;
+  }
+  
+   
+
+}
+
+
+
+

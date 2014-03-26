@@ -1,0 +1,33 @@
+/* yellow - #f1c40f */
+
+
+a:link,a:visited,.navbar-default .navbar-nav>li>a:hover, 
+.navbar-default .navbar-nav>li>a:focus,a:hover,a:active,.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:hover, 
+.navbar-default .navbar-nav>.active>a:focus{
+	color:#f1c40f;
+}
+
+.spacer,.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus,#grid .mix .overlay {
+
+background: #f1c40f;
+}
+
+#page-contact{
+	background: #f1c40f;
+	color:#fff;
+}
+
+#page-contact .spacer{
+	background: #fff;
+}
+
+#page-contact .section-title{
+	color:#fff;
+}
+
+.btn.btn-default:hover,
+.btn.btn-default:active{
+    color:#f1c40f;
+}
+
