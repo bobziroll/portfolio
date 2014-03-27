@@ -134,9 +134,16 @@ background-color: transparent;
 
 #page-skills{
     padding: 75px 0;
-    background:#f7f7f7;
+    background:#fff;
     text-align: center;
 }
+
+
+#page-portfolio{
+    padding: 75px 0;
+    background:#f7f7f7;
+}
+
 
 #page-education{
     padding: 75px 0;
@@ -145,15 +152,10 @@ background-color: transparent;
 
 
 #page-experience{
-     padding: 75px 0;
+    padding: 75px 0;
     background:#f7f7f7;
 }
 
-#page-portfolio{
-    padding: 75px 0;
-    background:#fff;
-
-}
 
 #page-contact{
     padding: 75px 0;

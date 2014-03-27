@@ -1,3 +1,7 @@
+p {
+    font-size: 1.2em;
+}
+
 a {
     -webkit-transition:all 0.25s ease;
 	-moz-transition:all 0.25s ease;
