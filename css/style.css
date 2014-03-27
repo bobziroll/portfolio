@@ -19,23 +19,24 @@ a:hover {
     max-height: 150px;
     margin-top: 50px;
     text-align: center;
-    -webkit-transition:all 0.25s ease;
-	-moz-transition:all 0.25s ease;
-	-o-transition:all 0.25s ease;
-	transition:all 0.25s ease;
-    opacity: .6;
+    -webkit-transition:all .75s ease;
+	-moz-transition:all .75s ease;
+	-o-transition:all .75s ease;
+	transition:all .75s ease;
+    opacity: .75;
 }
 
 .skill-set:hover {
-    -webkit-transition:all 0.25s ease;
-	-moz-transition:all 0.25s ease;
-	-o-transition:all 0.25s ease;
-	transition:all 0.25s ease;
+    -webkit-transition:all .75s ease;
+	-moz-transition:all .75s ease;
+	-o-transition:all .75s ease;
+	transition:all .75s ease;
     opacity: 1;
 }
 
-.page-education img, .page-experience img {
-     max-height: 150px;
+.page-skills img, .page-education img, .page-experience img {
+    max-height: 150px;
+    box-shadow: 5px 5px 10px #aaa;
 }
 
 #experience-container {
@@ -45,8 +46,12 @@ a:hover {
     box-shadow: 5px 5px 10px #aaa;
 }
 
-#experience-container h3 {
-    font-size: 3em;
+.page-education h3, .page-experience h3{
+    font-size: 2.5em;
+}
+
+.page-experience .col-md-6 {
+    margin-bottom: 60px;
 }
 
 #experience-container article {
