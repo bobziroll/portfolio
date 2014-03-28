@@ -1,5 +1,5 @@
 p {
-    font-size: 1.2em;
+    font-size: 1.15em;
 }
 
 a {
@@ -43,6 +43,10 @@ a:hover {
     box-shadow: 5px 5px 10px #aaa;
 }
 
+.page-education img {
+    padding: 10px;
+}
+
 #experience-container {
     padding: 0 50px;
     margin: auto;
@@ -61,3 +65,30 @@ a:hover {
 #experience-container article {
     vertical-align: top;
 }
+
+.experience li {
+    list-style: none;
+    margin: 0 0 10px -40px;
+    padding-left: 25px;
+    border-left: 2px solid #3498db;
+}
+
+.contact-info {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#page-contact a {
+    color: #ffffff;
+    -webkit-transition:all 0.25s ease;
+	-moz-transition:all 0.25s ease;
+	-o-transition:all 0.25s ease;
+	transition:all 0.25s ease;
+}
+
+#page-contact a:hover {
+    -webkit-transition:all 0.25s ease;
+	-moz-transition:all 0.25s ease;
+	-o-transition:all 0.25s ease;
+	transition:all 0.25s ease;
+    color: red;

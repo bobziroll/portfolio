@@ -124,11 +124,11 @@ background-color: transparent;
 }
 
 #page-profile .profile{
-    border: 5px solid #333;
+    border: 2px solid #333;
     width:225px;
     height:225px;
     margin: 0 20px 20px 0;
-   
+
 }
 
 
@@ -158,7 +158,7 @@ background-color: transparent;
 
 
 #page-contact{
-    padding: 75px 0;
+    padding: 15px 0;
 }
 
 #page-contact .contact-info p{
@@ -414,9 +414,9 @@ background-color: transparent;
 
 .btn.btn-default:hover,
 .btn.btn-default:active{
-    background:#fff;
+    background: #fff;
     border-color: #fff;
-    color:fff;
+    color: #fff;
 }
 
 input,.input-lg,button{
@@ -611,12 +611,9 @@ label.valid{
             text-align: center;
         }
 
-          #page-profile .profile{
-    margin:0 auto 20px auto;
-  }
-  
-   
-
+        #page-profile .profile{
+            margin:0 auto 20px auto;
+    }
 }
 
 
