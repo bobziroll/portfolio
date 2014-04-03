@@ -93,3 +93,11 @@ a:hover {
 	transition:all 0.25s ease;
     color: red;
 }
+
+#page-welcome header h1{
+    /*text-transform: lowercase;*/
+}
+
+#bottom-email{
+    font-size: 3em;
+}
