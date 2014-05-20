@@ -32,7 +32,7 @@ a img {
 
 h1,h2,h3,h4,h5,h6{
     font-family: 'Oxygen', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 /* ==========================================================================
@@ -167,7 +167,7 @@ background-color: transparent;
 
 
 /* ==========================================================================
-   Portfolio   
+   portfolio
    ========================================================================== */
 
 #grid-controls-wrapper{
@@ -361,11 +361,11 @@ background-color: transparent;
 }
 .section-title {
     font-size: 3em;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: 5px;
     text-align: center;
     color: #555555;
-    text-transform: uppercase;
+    font-variant: small-caps;
     padding:20px 0;
 }
 
@@ -524,6 +524,10 @@ label.valid{
     -webkit-transform:rotate(360deg);
     -moz-transform:rotate(360deg);
     -o-transform:rotate(360deg);
+}
+
+.btn-github:hover{
+    color:#333;
 }
 
 .btn-twitter:hover{
