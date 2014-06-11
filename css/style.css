@@ -9,6 +9,7 @@ a {
 	transition:all 0.25s ease;
 }
 
+
 a:hover {
     -webkit-transition:all 0.25s ease;
 	-moz-transition:all 0.25s ease;
