@@ -28,7 +28,7 @@ a:hover {
 	-moz-transition:all .75s ease;
 	-o-transition:all .75s ease;
 	transition:all .75s ease;
-    opacity: .75;
+    opacity: .85;
 }
 
 .skill-set:hover {
@@ -41,7 +41,7 @@ a:hover {
 
 .page-skills img, .page-education img, .page-experience img {
     max-height: 150px;
-    box-shadow: 5px 5px 10px #aaa;
+    /*box-shadow: 5px 5px 10px #aaa;*/
 }
 
 .page-education img {
